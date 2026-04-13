@@ -1,88 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-	<title>It's All Relative</title>
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Journal | Editorial Blog Template</title>
+  <meta
+    name="description"
+    content="Studio Journal is a modern editorial blog template built with HTML, CSS, and JavaScript."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-	<div class="container">
-		<div id="title" class="title-styles">
-			<header>
-				<h1>It's All Relative</h1>
-				<h2>Catherine Nelson's family history project.</h2>
-				<blockquote>&quot;We humans are all related. 'Tis only a matter of degree. Let's figure that out.&quot;</blockquote>
-			</header>	
-			<section>
-				<img id="icon-pic" src="images/catherine-fb.jpg" width="480" height="480" alt="catherine holding a cat">
-			</section>
-		</div>
-		<div class="article">
-			<div class="left-side">
-				<aside>
-					<h3>Click on a family name for a cool pic updates</h3>
-					<ul>
-						<li><a href="#">Nelson</a></li>
-						<li><a href="#">Cummins</a></li>
-						<li><a href="#">Bolin</a></li>
-						<li><a href="#">Foley</a></li>
-						<li><a href="#">O'Malley</a></li>
-						<li><a href="#">Miller</a></li>
-						<li><a href="#">Hilger</a></li>
-						<li><a href="#">Mogis</a></li>
-						<li><a href="#">Leddy</a></li>
-						<li><a href="#">Sharp</a></li>
-						<li><a href="#">Delavon</a></li>
-						<li><a href="#">Youngflesh</a></li>
-						<li><a href="#">Workman</a></li>
-						<li><a href="#">Schaefer</a></li>
-					</ul>
-				</aside>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">Studio Journal</a>
 
-				<aside class="links">
-					<h3>Links To</h3>
-					<ul>
-						<li><a href="https://www.ancestry.com/">Ancestry.com</a></li>
-						<li><a href="https://www.archives.gov/research/census">Census Records</a></li>
-					</ul>
-				</aside>
-			</div>	
-			<div class="main">
-					<h2>In the latest news...</h2>
-					<div class="post">
-						
-						<img class="history" src="images/history-composition-honors-binoculars.jpeg" width="640px" height="913px" alt="different military heirlooms">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-						<h3>Chat with Mogis cousin in Normandy</h3>
-						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit, orci ut condimentum tempus, leo justo varius purus, vitae rhoncus sapien neque ut dui. Donec faucibus nunc nec elit feugiat aliquet. Vivamus placerat rutrum scelerisque. Quisque non nunc urna. Praesent facilisis accumsan dui sed volutpat. Sed sit amet pretium dui, non porttitor metus. Donec ullamcorper dolor non quam porttitor pellentesque. In rutrum nunc ac quam volutpat sodales. Nam tempus ullamcorper scelerisque. Nullam quis fringilla eros. Suspendisse nec sollicitudin est, vitae varius dolor. Mauris ultrices turpis eget ex tristique, non pellentesque sem feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <nav class="site-nav" id="siteNav">
+        <a href="#featured">Featured</a>
+        <a href="#categories">Categories</a>
+        <a href="#articles">Articles</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+    </div>
+  </header>
 
-						
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Editorial Blog Template</p>
+          <h1>Modern storytelling for content-driven brands.</h1>
+          <p class="hero-text">
+            A polished, responsive blog layout built for creators, personal
+            brands, lifestyle businesses, and editorial-style websites.
+          </p>
 
-					</div>
-					<div class="post">
-						<h3>Cousin Jenn Found Census Records!</h3>
-				
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit, orci ut condimentum tempus, leo justo varius purus, vitae rhoncus sapien neque ut dui. Donec faucibus nunc nec elit feugiat aliquet. Vivamus placerat rutrum scelerisque. Quisque non nunc urna. Praesent facilisis accumsan dui sed volutpat. Sed sit amet pretium dui, non porttitor metus. Donec ullamcorper dolor non quam porttitor pellentesque. In rutrum nunc ac quam volutpat sodales. Nam tempus ullamcorper scelerisque. Nullam quis fringilla eros. Suspendisse nec sollicitudin est, vitae varius dolor. Mauris ultrices turpis eget ex tristique, non pellentesque sem feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div> 
-					<div class="post">
-						<h3>Family History and Why It Is Important</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit, orci ut condimentum tempus, leo justo varius purus, vitae rhoncus sapien neque ut dui. Donec faucibus nunc nec elit feugiat aliquet. Vivamus placerat rutrum scelerisque. Quisque non nunc urna. Praesent facilisis accumsan dui sed volutpat. Sed sit amet pretium dui, non porttitor metus. Donec ullamcorper dolor non quam porttitor pellentesque. In rutrum nunc ac quam volutpat sodales. Nam tempus ullamcorper scelerisque. Nullam quis fringilla eros. Suspendisse nec sollicitudin est, vitae varius dolor. Mauris ultrices turpis eget ex tristique, non pellentesque sem feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
+          <div class="hero-actions">
+            <a href="#articles" class="btn btn-primary">Explore Articles</a>
+            <a href="#newsletter" class="btn btn-secondary">Join Newsletter</a>
+          </div>
 
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>Responsive</strong>
+              <span>Mobile-first layout</span>
+            </div>
+            <div class="stat-card">
+              <strong>Modern UI</strong>
+              <span>Editorial-inspired design</span>
+            </div>
+            <div class="stat-card">
+              <strong>Interactive</strong>
+              <span>Category filtering with JavaScript</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="hero-image-card">
+          <img
+            src="images/hero-editorial.png"
+            alt="Editorial styled workspace with journal and coffee"
+          />
+        </div>
+      </div>
+    </section>
 
-			</div>
+    <section class="featured" id="featured">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Featured Story</p>
+          <h2>A refined layout for thoughtful content.</h2>
+        </div>
 
+        <article class="featured-card">
+          <div class="featured-image">
+            <img
+              src="images/featured-story.png"
+              alt="Woman holding baby shoes outdoors"
+            />
+          </div>
 
+          <div class="featured-content">
+            <span class="tag">Featured</span>
+            <h3>How strong visual storytelling builds connection online</h3>
+            <p>
+              Great content design goes beyond publishing words on a page. It
+              uses space, imagery, hierarchy, and emotion to create a reading
+              experience that feels intentional and memorable.
+            </p>
+            <a href="#articles" class="text-link">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-		</div>
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Browse by Category</p>
+          <h2>Find the stories that fit your audience.</h2>
+        </div>
 
-					<a href="https://www.google.com/">Next Post</a>
-					<a href="#title">Back to Top</a>	
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+          <button class="filter-btn" data-filter="culture">Culture</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+      </div>
+    </section>
 
-	</div>
+    <section class="articles" id="articles">
+      <div class="container articles-layout">
+        <div class="articles-grid">
+          <article class="post-card" data-category="lifestyle">
+            <img
+              src="images/post-lifestyle.png"
+              alt="Rain boots lined up by a wooden wall"
+            />
+            <div class="post-content">
+              <span class="post-meta">Lifestyle</span>
+              <h3>Small rituals that make everyday life feel intentional</h3>
+              <p>
+                From morning routines to better spaces, thoughtful habits can
+                create calm, clarity, and a more grounded rhythm.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="culture">
+            <img
+              src="images/post-culture.png"
+              alt="Vintage historical objects and keepsakes"
+            />
+            <div class="post-content">
+              <span class="post-meta">Culture</span>
+              <h3>Why preserving stories still matters in a digital world</h3>
+              <p>
+                The most meaningful archives are often personal, layered, and
+                rooted in everyday life. Design can help them feel alive again.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="design">
+            <img
+              src="images/post-design.png"
+              alt="Minimal notebook and creative desk setup"
+            />
+            <div class="post-content">
+              <span class="post-meta">Design</span>
+              <h3>Editorial layouts that keep readers engaged longer</h3>
+              <p>
+                Strong hierarchy, clean typography, and intentional spacing turn
+                ordinary pages into an elevated reading experience.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="travel">
+            <img
+              src="images/post-travel.png"
+              alt="Travel essentials arranged for a trip"
+            />
+            <div class="post-content">
+              <span class="post-meta">Travel</span>
+              <h3>A slower approach to travel content that feels personal</h3>
+              <p>
+                Readers connect with place through detail, mood, and honest
+                storytelling more than through endless checklists.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="lifestyle">
+            <img
+              src="images/post-wellness.png"
+              alt="Neutral home corner with calming decor"
+            />
+            <div class="post-content">
+              <span class="post-meta">Lifestyle</span>
+              <h3>Creating a home atmosphere that supports better focus</h3>
+              <p>
+                Design choices do not need to be dramatic to be effective.
+                Light, texture, and layout can change how a room feels.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="design">
+            <img
+              src="images/post-brand.png"
+              alt="Creative brand planning notes on desk"
+            />
+            <div class="post-content">
+              <span class="post-meta">Design</span>
+              <h3>How visual consistency builds trust for online brands</h3>
+              <p>
+                When content, layout, and tone work together, a website feels
+                more credible, polished, and easier to remember.
+              </p>
+              <a href="#" class="text-link">Read article</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-card about-card">
+            <p class="section-label">About the Template</p>
+            <h3>Built for modern blog-style websites</h3>
+            <p>
+              This template is designed to showcase editorial content with a
+              polished front-end experience using only HTML, CSS, and
+              JavaScript.
+            </p>
+          </div>
+
+          <div class="sidebar-card popular-card">
+            <p class="section-label">Popular Topics</p>
+            <ul class="topic-list">
+              <li><a href="#">Content Strategy</a></li>
+              <li><a href="#">Editorial Design</a></li>
+              <li><a href="#">Lifestyle Blogging</a></li>
+              <li><a href="#">Brand Storytelling</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card quote-card">
+            <p class="section-label">Editor’s Note</p>
+            <blockquote>
+              Great websites do not just display content. They shape how that
+              content is felt.
+            </blockquote>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter-card">
+          <div>
+            <p class="section-label">Stay Connected</p>
+            <h2>Get thoughtful stories and creative inspiration.</h2>
+            <p>
+              This section can be used as a newsletter sign-up area, lead
+              capture block, or simple call-to-action for client sites.
+            </p>
+          </div>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Studio Journal. Built as a front-end editorial blog template.</p>
+      <a href="#top" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
